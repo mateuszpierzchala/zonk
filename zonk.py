@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from random import shuffle, randrange
-
+#modelowanie elementów gry: drzwi, wyboru drzwi i metod: ukrywającej nagrodę za losowymi drzwiami, wyboru drzwi itd.
 class Door(object):
 	def __init__(self,prize):
 		self.prize =prize
@@ -46,7 +46,7 @@ class Show(object):
 
 print ("wybrane, ujawnione,alternatywne, nagroda");
 
-
+# generowanie zdarzeń i zapisanie ich w pliku ".csv"
 my_data = []
 for i in range(1000):
 	show=Show()
